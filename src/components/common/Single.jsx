@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import moment from "moment";
 import {withRouter} from "react-router-dom";
 import {MOVIE_DETAILS} from './Constants';
+
 class Single extends Component {
 
     getMovieDetails(item) {
@@ -15,7 +16,7 @@ class Single extends Component {
 
             })
             .catch(error => {
-                console.error("error while fetching movie details", error);
+                this.props.errorHook("error while fetching movie details" + error);
             });
 
     }

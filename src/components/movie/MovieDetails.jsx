@@ -21,7 +21,7 @@ export const MovieDetails = ({details}) => {
                         <img id="posterImg" src={'http://image.tmdb.org/t/p/original' + details.poster_path}
                              alt="poster"/>
                     </div>
-                    <div className="card-image flow-text layer-20 bottom">uu
+                    <div className="card-image flow-text layer-20 bottom">
                         <div id="yearRelease">
                             {releaseDate.getFullYear()}
                         </div>

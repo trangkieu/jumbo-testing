@@ -142,3 +142,20 @@ input[type=text] {
   padding-top: 70%;
 }
 
+.App {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.errorMessage {
+  color: red;
+  /*margin-left: 30%;*/
+  /*margin-right: 30%;*/
+  display: inline;
+  padding-left: 20px;
+  box-sizing: border-box;
+  /*padding-left: 20px;*/
+  /*box-sizing: content-box;*/
+  /*margin: 40px*/
+}
