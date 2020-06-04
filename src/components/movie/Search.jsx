@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {MOVIE_SEARCH_RESULTS} from "../Constants";
+import {MOVIE_SEARCH_RESULTS} from "../common/Constants";
 import {withRouter} from 'react-router-dom';
 
 

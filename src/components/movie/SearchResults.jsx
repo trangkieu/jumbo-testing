@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import {withRouter} from 'react-router-dom';
-import Grid from "./Grid";
+import Grid from "../common/Grid";
 
 
 class SearchResults extends Component{

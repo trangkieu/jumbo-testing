@@ -1,4 +1,4 @@
-import Grid from "./Grid";
+import Grid from "../common/Grid";
 import React from "react";
 import Search from "./Search";
 

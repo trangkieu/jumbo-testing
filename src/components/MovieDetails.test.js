@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import {MovieDetails} from "./listings/MovieDetails";
+import {MovieDetails} from "./movie/MovieDetails";
 import mockMovieDetails from "../data/movieDetails";
 import React from "react";
 

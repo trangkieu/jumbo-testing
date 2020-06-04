@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import moment from "moment";
 import {withRouter} from "react-router-dom";
-import {MOVIE_DETAILS} from '../Constants';
+import {MOVIE_DETAILS} from './Constants';
 class Single extends Component {
 
     getMovieDetails(item) {

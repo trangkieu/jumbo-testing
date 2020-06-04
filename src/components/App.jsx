@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import './App.css';
-import {PopularMovies} from './listings/PopularMovies';
-import {MovieDetails} from './listings/MovieDetails';
-import {HOME, MOVIE_DETAILS, MOVIE_SEARCH_RESULTS} from './Constants';
-import SearchResults from "./listings/SearchResults";
+import {PopularMovies} from './movie/PopularMovies';
+import {MovieDetails} from './movie/MovieDetails';
+import {HOME, MOVIE_DETAILS, MOVIE_SEARCH_RESULTS} from './common/Constants';
+import SearchResults from "./movie/SearchResults";
 
 
 export default class App extends Component {
