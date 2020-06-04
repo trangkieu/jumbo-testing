@@ -1,0 +1,87 @@
+{
+  "adult": false,
+  "backdrop_path": "/93xA62uLd5CwMOAs37eQ7vPc1iV.jpg",
+  "belongs_to_collection": null,
+  "budget": 52000000,
+  "genres": [
+    {
+      "id": 18,
+      "name": "Drama"
+    },
+    {
+      "id": 10402,
+      "name": "Music"
+    }
+  ],
+  "homepage": "http://bohemianrhapsody.com",
+  "id": 424694,
+  "imdb_id": "tt1727824",
+  "original_language": "en",
+  "original_title": "Bohemian Rhapsody",
+  "overview": "Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
+  "popularity": 32.957,
+  "poster_path": "/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg",
+  "production_companies": [
+    {
+      "id": 3281,
+      "logo_path": "/8tMybAieh64uzvm8knSjXOFX8Qc.png",
+      "name": "GK Films",
+      "origin_country": "GB"
+    },
+    {
+      "id": 508,
+      "logo_path": "/7PzJdsLGlR7oW4J0J5Xcd0pHGRg.png",
+      "name": "Regency Enterprises",
+      "origin_country": "US"
+    },
+    {
+      "id": 90995,
+      "logo_path": null,
+      "name": "Queen Films",
+      "origin_country": "GB"
+    },
+    {
+      "id": 11391,
+      "logo_path": null,
+      "name": "Tribeca Productions",
+      "origin_country": "US"
+    },
+    {
+      "id": 10104,
+      "logo_path": "/hNuGhsKVlmhnwSRcmOejDBDjh6w.png",
+      "name": "New Regency Pictures",
+      "origin_country": "US"
+    },
+    {
+      "id": 25,
+      "logo_path": "/qZCc1lty5FzX30aOCVRBLzaVmcp.png",
+      "name": "20th Century Fox",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "GB",
+      "name": "United Kingdom"
+    },
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "release_date": "2018-10-24",
+  "revenue": 894027543,
+  "runtime": 135,
+  "spoken_languages": [
+    {
+      "iso_639_1": "en",
+      "name": "English"
+    }
+  ],
+  "status": "Released",
+  "tagline": "Fearless lives forever",
+  "title": "Bohemian Rhapsody",
+  "video": false,
+  "vote_average": 8.0,
+  "vote_count": 11168
+}

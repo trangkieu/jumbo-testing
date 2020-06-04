@@ -1,0 +1,56 @@
+exports[`Movie details snapshot renders 1`] = `
+<div>
+  <div
+    className="row">
+    <div
+      className="row__divide-2 about-additional-data">
+      <div
+        className="card-image flow-text layer-20 bottom">
+        <img
+          alt="backdrop"
+          id="backdropImg"
+          src="http://image.tmdb.org/t/p/original/93xA62uLd5CwMOAs37eQ7vPc1iV.jpg" />
+      </div>
+      <div
+        className="card-image flow-text layer-10">
+        <img
+          alt="poster"
+          id="posterImg"
+          src="http://image.tmdb.org/t/p/original/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg" />
+      </div>
+      <div
+        className="card-image flow-text layer-20 bottom">
+        uu
+        <div
+          id="yearRelease">
+          2018
+        </div>
+        <div
+          id="votePercentage">
+          80
+          % User Score
+        </div>
+        <div
+          id="runtime">
+          2
+          hr 
+          15
+          min
+        </div>
+      </div>
+      <div
+        className="row__divide-2__col-1 layer-30"
+        id="movieDescriptions">
+        <div>
+          <h2>
+            Bohemian Rhapsody
+          </h2>
+          <p>
+            Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
