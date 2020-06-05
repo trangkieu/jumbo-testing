@@ -3,6 +3,7 @@ import React from "react";
 import Search from "./Search";
 
 export const PopularMovies = ({popularMovies, detailsHook, resultsHook, errorHook}) => {
+    console.log("popular movies....");
     const popularMoviesDisplay = popularMovies !== null ?
         <Grid items={popularMovies} maxDisplay={popularMovies.length}
               detailsHook={detailsHook}
