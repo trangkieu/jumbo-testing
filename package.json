@@ -26,5 +26,5 @@
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build"
   },
-  "homepage": "https://trangkieu.github.io/jumbo-testing/"
+  "homepage": "."
 }
