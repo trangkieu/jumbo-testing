@@ -57,7 +57,7 @@ export default class App extends Component {
         return (
             <BrowserRouter>
                 <div>
-                    <div className="container">
+                    <div className="logo-header">
                         <div className="green-deco1">test 1</div>
                         <div className="logo float-right">
                             <img className="logo-image" src="images/green-logo.svg" alt="logo"/>
