@@ -10,46 +10,30 @@ export const MovieDetails = ({details}) => {
     const runTimeMinutes = runTime % 60;
     return (
 
-        <div>
-            <div className="row">
-                <div className="row__divide-2 about-additional-data">
-                    <div className="card-image flow-text layer-20 bottom">
-                        <img id="backdropImg" src={'http://image.tmdb.org/t/p/original' + details.backdrop_path}
-                             alt="backdrop"/>
-                    </div>
-                    <div className="card-image flow-text layer-10">
-                        <img id="posterImg" src={'http://image.tmdb.org/t/p/original' + details.poster_path}
-                             alt="poster"/>
-                    </div>
-                    <div className="card-image flow-text layer-20 bottom">
-                        <div id="yearRelease">
-                            {releaseDate.getFullYear()}
-                        </div>
-                        <div id="votePercentage">
-                            {votePercentage}% User Score
-                        </div>
-                        <div id="runtime">
-                            {runTimeHour}hr {runTimeMinutes}min
-                        </div>
-                    </div>
 
-                    {/*<div id="poster-img">*/}
-                    {/*    <img src={'http://image.tmdb.org/t/p/original' + details.poster_path}*/}
-                    {/*         alt="poster"/>*/}
-                    {/*</div>*/}
-                    {/*<div id="backdrop-img">*/}
-                    {/*    <img src={'http://image.tmdb.org/t/p/original' + details.backdrop_path}*/}
-                    {/*         alt="backdrop"/>*/}
-                    {/*</div>*/}
+        <div className="details">
+            <div className="details-header">
+                <div className="poster-details">
+                    <img id="posterImg" src={'http://image.tmdb.org/t/p/original' + details.poster_path}
+                         alt="poster"/>
+                </div>
+                <div className="details-section">
+                    <div id="movie-title" className="movie-title">{details.title}</div>
+                    <div id="rating" className="large-font">{releaseDate.getFullYear()} &#183; {votePercentage}% User Score</div>
+                    <div id="runtime" className="large-font">{runTimeHour}hr {runTimeMinutes}min</div>
+                </div>
 
-                    <div id="movieDescriptions" className="row__divide-2__col-1 layer-30">
-                        <div>
-                            <h2>{details.title}</h2>
-                            <p>{details.overview}</p>
-                        </div>
-                    </div>
+                <div className="backdrop-details">
+                    <img id="backdropImg" src={'http://image.tmdb.org/t/p/original' + details.backdrop_path}
+                         alt="backdrop"/>
                 </div>
             </div>
+            <div className="overview">
+                <div className="overview-title">Overview</div>
+                <div id="movieDescriptions" className="overview-desc"><p>{details.overview}</p></div>
+
+            </div>
         </div>
+
     )
 }
