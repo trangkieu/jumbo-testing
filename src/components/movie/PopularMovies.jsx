@@ -4,7 +4,7 @@ import Search from "./Search";
 
 export const PopularMovies = ({popularMovies, detailsHook, resultsHook, errorHook}) => {
     const popularMoviesDisplay = popularMovies !== null ?
-        <Grid items={popularMovies} maxDisplay={6}
+        <Grid items={popularMovies} maxDisplay={popularMovies.length}
               detailsHook={detailsHook}
               errorHook={errorHook}
         /> : <div/>;
@@ -12,7 +12,7 @@ export const PopularMovies = ({popularMovies, detailsHook, resultsHook, errorHoo
     return (
         <div>
             <Search resultsHook={resultsHook} errorHook={errorHook}/>
-            <div id="popular-movies" >Popular Movies</div>
+            <div id="popular-movies" className="title-heading">Popular Movies</div>
             <div>
                 {popularMoviesDisplay}
             </div>

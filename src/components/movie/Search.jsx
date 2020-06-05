@@ -37,24 +37,24 @@ class Search extends Component {
                 this.props.history.push(MOVIE_SEARCH_RESULTS);
             })
                 .catch(error => {
-                    this.props.errorHook('Error while searching for movies: '+error);
+                    this.props.errorHook('Error while searching for movies: ' + error);
                 })
         }
     }
 
     render() {
         return (
-            <div className="inline">
-                <input type="text" placeholder="Search" onKeyUp={this.setSearchString.bind(this)}
-                       background-color="white" color="#34eb4f" border-radius="40px" required={true}/>
+            <div className="search-input">
+                <input type="text" placeholder="Search" onKeyUp={this.setSearchString.bind(this)} width="400px"
+                       height="50px"/> &nbsp;
 
-                <img src="images/magnifying-glass-3-xxl.png" width="20px" height="20px" align="right"
-                     onClick={this.search.bind(this)} alt="search-button" float="right"/>
+                <img src="images/magnifying-glass-3-xxl.png" width="20px" height="20px" alt="search-button"
+                     onClick={this.search.bind(this)}/>
+
             </div>
 
         );
     }
-
 }
 
 export default withRouter(Search)

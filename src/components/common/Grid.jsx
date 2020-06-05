@@ -13,13 +13,9 @@ export default class Grid extends Component {
 
     render() {
         return (
-            <div>
-                <div className="row">
-                    <ul>
-                        {this.renderList()}
-                    </ul>
-                </div>
-            </div>
+            <section className="listing">
+                {this.renderList()}
+            </section>
         )
     }
 }

@@ -25,18 +25,16 @@ class Single extends Component {
         let releaseDate = new Date(moment(this.props.item.release_date, "YYYY-MM-DD"));
         let monthName = moment(releaseDate).format('MMMM');
         return (
-            <li className="col l6 s12">
-                <div className="card card-image" onClick={() => this.getMovieDetails(this.props.item)}>
-                    <div className="card-image">
-                        <img src={'http://image.tmdb.org/t/p/original' + this.props.item.poster_path}
-                             alt={this.props.item.title}/>
-                    </div>
-                    <div className="movie-title xlarge-font">{this.props.item.title}</div>
-                    <div className="movie-title">{monthName} {releaseDate.getFullYear()}
-                    </div>
+
+            <div onClick={() => this.getMovieDetails(this.props.item)}>
+                <div className="listing-img-wrapper">
+                    <img src={'http://image.tmdb.org/t/p/original' + this.props.item.poster_path}
+                         alt={this.props.item.title}/>
                 </div>
-                <br/>
-            </li>
+                <div className="xlarge-font">{this.props.item.title}</div>
+                <div>{monthName} {releaseDate.getFullYear()}</div>
+            </div>
+
         );
     }
 
