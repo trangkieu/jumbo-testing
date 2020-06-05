@@ -24,7 +24,8 @@ export default class App extends Component {
         fetch('https://api.themoviedb.org/3/movie/popular?api_key=6ed12e064b90ae1290fa326ce9e790ff&language=en-US')
             .then(response => response.json())
             .then(data => {
-                let movieResults = data.results;
+                // sort by vote average to get the popular scores
+                let movieResults = data.results.sort((a,b) => (a.vote_average < b.vote_average) ? 1 : ((b.vote_average < a.vote_average) ? -1 : 0));
 
                 this.setState({popularMovies: movieResults});
 
