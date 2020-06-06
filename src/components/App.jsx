@@ -27,7 +27,6 @@ export default class App extends Component {
                 // sort by vote average to get the popular scores
                 let movieResults = data.results.sort((a,b) => (a.vote_average < b.vote_average) ? 1 : ((b.vote_average < a.vote_average) ? -1 : 0));
 
-                console.log("movieResults ------------------------", movieResults);
                 this.setState({popularMovies: movieResults});
 
             }).catch(error => {

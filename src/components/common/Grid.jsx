@@ -12,7 +12,6 @@ export default class Grid extends Component {
 
 
     render() {
-        console.log('rendering Grid ...');
         return (
             <section className="listing">
                 {this.renderList()}

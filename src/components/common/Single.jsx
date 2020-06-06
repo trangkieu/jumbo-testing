@@ -12,7 +12,6 @@ class Single extends Component {
             .then(response => response.json())
             .then(details => {
                 this.props.detailsHook(details);
-                console.log("details ", details);
                 this.props.history.push(MOVIE_DETAILS);
 
             })
@@ -23,12 +22,11 @@ class Single extends Component {
     }
 
     render() {
-        console.log("render each single movie item", this.props.item);
         let releaseDate = new Date(moment(this.props.item.release_date, "YYYY-MM-DD"));
         let monthName = moment(releaseDate).format('MMMM');
         return (
 
-            <div onClick={() => this.getMovieDetails(this.props.item)}>
+            <div id="eachMovie" onClick={() => this.getMovieDetails(this.props.item)}>
                 <div className="listing-img-wrapper">
                     <img src={'http://image.tmdb.org/t/p/original' + this.props.item.poster_path}
                          alt={this.props.item.title}/>

@@ -44,11 +44,11 @@ class Search extends Component {
 
     render() {
         return (
-            <div className="search-input">
-                <input type="text" placeholder="Search" onKeyUp={this.setSearchString.bind(this)} width="400px"
+            <div id="searchInput" className="search-input">
+                <input id="searchInput" type="text" placeholder="Search" onKeyUp={this.setSearchString.bind(this)} width="400px"
                        height="50px"/> &nbsp;
 
-                <img src="images/magnifying-glass-3-xxl.png" width="20px" height="20px" alt="search-button"
+                <img id="searchImg" src="images/magnifying-glass-3-xxl.png" width="20px" height="20px" alt="search-button"
                      onClick={this.search.bind(this)}/>
 
             </div>
